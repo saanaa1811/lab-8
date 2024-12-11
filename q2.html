@@ -1,1 +1,44 @@
-<!-- rewrite this document with the required content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Berners Lee and the World Wide Web</title>
+</head>
+<body>
+    <main>
+        <h1>Tim Berners Lee: 
+            The Inventor of the World Wide Web</h1>
+        <p>
+            Tim Berners Lee created the World Wide Web in 1989, changing the way we access and exchange information all through the world. His invention of the web has been one of the most important contributions to the technological age.
+        </p>
+
+        <img src="timberner.png" alt=>
+
+        <h2>The Three Key Parts of the World Wide Web Invention</h2>
+        <dl>
+            <dt>1) HTML (HyperText Markup Language)</dt>
+            <dd>A standardized approach for arranging online pages with markup tags. HTML determines the layout of web pages with features such as headers, paragraphs, and hyperlinks..</dd>
+
+            <dt>2) HTTP (HyperText Transfer Protocol)</dt>
+            <dd>The protocol used to send information between a web browser and a web server. It allows for web-based communication and resource access.</dd>
+
+            <dt>3) URL (Uniform Resource Locator)</dt>
+            <dd>A particular URL for locating web resources such as webpages or photos. A URL allows users to get to a particular page on the World Wide Web.</dd>
+        </dl>
+    </main>
+
+    <footer>
+        <p>© <x-copyright-year></x-copyright-year> All rights reserved.</p>
+    </footer>
+
+    <script>
+        class CopyrightYear extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = new Date().getFullYear(); 
+            }
+        }
+        customElements.define("x-copyright-year", CopyrightYear);
+    </script>
+</body>
+</html>
